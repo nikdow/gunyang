@@ -1,0 +1,93 @@
+/*
+ Theme Name:   Simpleblock Gunyang
+ Theme URI:    http://www.cbdweb.net/
+ Description:  Gunyang child of CBDWeb SimpleBlock theme
+ Author:       Nik Dow
+ Author URI:   http://www.cbdweb.net/
+ Template:     simpleblock
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         top bottom menu
+ Text Domain:  simpleblock-gunyang
+*/
+
+body {
+    background-image: url(/bookings/unique/gunyang/image/logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 3%;
+    background-position-y: 7px;
+}
+h1.site-title {
+	height: 2px;
+	padding: 6px 0;
+	background-color: #02ffff;
+}
+div.menu-footer-menu-container, div.menu-header-menu-container {
+	margin: 57px  0 0 320px;
+}
+ul#menu-header-menu>li>a{
+    white-space: nowrap;
+}
+ul#menu-header-menu>li>ul.sub-menu{
+    -webkit-padding-start: 0;
+    padding-left: 0;
+    position: absolute;
+    background: white;
+    padding: 5px 0;
+}
+ul#menu-header-menu>li>ul.sub-menu>li{
+  list-style-type: none;
+    display: none;
+    white-space: nowrap;
+    overflow: visible;
+    clear: left;
+	margin-left: 5px;
+	width: 170%;
+	background: white;
+}
+ul#menu-header-menu>li:hover>ul.sub-menu>li
+{
+    display: block;
+}
+ul#menu-header-menu>li.current-menu-ancestor{
+	font-weight: bold;
+}
+ul#menu-header-menu > li.current-menu-item>ul, ul#menu-header-menu > li.current-menu-ancestor>ul {
+    font-weight: normal;
+}
+ul#menu-header-menu>li>ul.sub-menu>li>ul>li{
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    white-space: nowrap;
+    overflow: visible;
+}
+ul#menu-header-menu>li#menu-item-20.current-menu-ancestor, ul#menu-header-menu>li#menu-item-20>ul {
+    width: 4em;
+}
+form.bop-nav-search input.search-submit, form.bop-nav-search>label>span {
+    display: none;
+}
+h1.entry-title {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px;
+    color: #353535;
+    font-weight: normal;
+}
+div.entry-content{
+    float: left;
+    width: 72%
+}
+.primary-sidebar {
+    float: right;
+    width: 25%;
+    margin-left: 3%;
+}
+div#content{
+	margin: 25px auto;
+}
+div#footer {
+	display: none;
+}
