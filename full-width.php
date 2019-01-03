@@ -3,6 +3,7 @@
 Template Name: full-width
 no side bar
 */
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php /*
 		// Post thumbnail.
