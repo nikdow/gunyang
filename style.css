@@ -85,6 +85,13 @@ div.entry-content{
     width: 25%;
     margin-left: 3%;
 }
+.primary-sidebar h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    color: #353535;
+    font-weight: normal;
+}
 div#content{
 	margin: 25px auto;
 }
