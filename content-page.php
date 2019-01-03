@@ -16,7 +16,7 @@
 
     <?php include_once "sidebar.php"?>
 
-	<div class="entry-content">
+	<div class="entry-content <?=is_page_template( 'full-width.php' ) ? ' full-width' : ''?> ">
             <?php if ( has_post_thumbnail() ) { ?>
                 <img class="featured-image" src="<?=wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' )[0]?>"/>
             <?php } ?>

@@ -82,6 +82,9 @@ div.entry-content{
     float: left;
     width: 72%
 }
+div.entry-content.full-width{
+    width: 100%;
+}
 /*
 sidebar widgets
  */

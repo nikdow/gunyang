@@ -3,21 +3,27 @@
 Template Name: full-width
 no side bar
 */
-?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php /*
-		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
-*/	?>
+get_header(); ?>
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 
-	<div class="entry-content">
-            <?php if ( has_post_thumbnail() ) { ?>
-                <img class="featured-image" src="<?=wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' )[0]?>"/>
-            <?php } ?>
-            <header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </header><!-- .entry-header -->
-            <?php the_content(); ?>
-	</div><!-- .entry-content -->
+            <?php
+            // Start the loop.
+            while ( have_posts() ) : the_post();
 
-</article><!-- #post-## -->
+                // Include the page content template.
+                get_template_part( 'content', 'page' );
+
+                // If comments are open or we have at least one comment, load up the comment template.
+                if ( comments_open() || get_comments_number() ) :
+                    comments_template();
+                endif;
+
+                // End the loop.
+            endwhile;
+            ?>
+
+        </main><!-- .site-main -->
+    </div><!-- .content-area -->
+<?php
+get_footer();
