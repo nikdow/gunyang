@@ -39,5 +39,4 @@
     <?php endif; ?>
     <div id="content" class="site-content">
 
-        <?php include_once "sidebar.php"?>
     

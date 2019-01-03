@@ -1,20 +1,13 @@
 <?php
-/**
- * The template used for displaying page content
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-?>
-
+/*
+Template Name: full-width
+no side bar
+*/
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php /*
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
 */	?>
-
-    <?php include_once "sidebar.php"?>
 
 	<div class="entry-content">
             <?php if ( has_post_thumbnail() ) { ?>
