@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: 3%;
     background-position-y: 7px;
+    font: 12px/20px Arial, Helvetica, sans-serif;
 }
 h1.site-title {
 	height: 2px;
@@ -26,12 +27,14 @@ h1.site-title {
 div.menu-footer-menu-container, div.menu-header-menu-container {
 	margin: 57px  0 0 320px;
 }
+/*
+header menu
+ */
 ul#menu-header-menu>li>a{
     white-space: nowrap;
 }
 ul#menu-header-menu>li>ul.sub-menu{
     -webkit-padding-start: 0;
-    padding-left: 0;
     position: absolute;
     background: white;
     padding: 5px 0;
@@ -80,6 +83,9 @@ div.entry-content{
     float: left;
     width: 72%
 }
+/*
+sidebar widgets
+ */
 .primary-sidebar {
     float: right;
     width: 25%;
@@ -92,6 +98,44 @@ div.entry-content{
     color: #353535;
     font-weight: normal;
 }
+div#primary-sidebar ul#menu-sidebar-links>li>a{
+    color: #757575;
+    padding-bottom: 10px;
+    text-decoration: none;
+    width: 98%;
+}
+div#primary-sidebar ul#menu-sidebar-links>li{
+    padding: 10px 0;
+    float: left;
+    border-bottom: 1px solid #e3e3e3;
+    width: 100%;
+}
+div#primary-sidebar ul#menu-sidebar-links{
+    float: left;
+    width: 100%;
+    list-style:none;
+    font: 12px/20px Arial, Helvetica, sans-serif;
+    padding-left: 0;
+}
+div#primary-sidebar ul#menu-sidebar-links>li>a>img {
+    float: left;
+    padding: 4px;
+    border: 1px solid #b5b5b5;
+    box-shadow: 0 0 5px rgba(200, 200, 200, 1);
+    -webkit-box-shadow: 0 0 5px rgba(200, 200, 200, 1);
+    -moz-box-shadow: 0 0 5px rgba(200, 200, 200, 1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin: 0 10px 0 0;
+}
+div#primary-sidebar ul#menu-sidebar-links>li>a>span {
+    display:block;
+    font-size: 75%;
+}
+/*
+Body
+ */
 div#content{
 	margin: 25px auto;
 }
