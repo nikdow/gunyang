@@ -12,16 +12,19 @@
  Text Domain:  simpleblock-gunyang
 */
 
-body {
-    background-image: url(/api/style/gunyang/image/logo.png);
-    background-repeat: no-repeat;
-    background-position-x: 3%;
-    background-position-y: 7px;
-}
-h1.site-title {
-	height: 2px;
-	padding: 6px 0;
-	background-color: #02ffff;
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url(/api/style/gunyang/image/logo.png);
+        background-repeat: no-repeat;
+        background-position-x: 3%;
+        background-position-y: 7px;
+    }
+
+    h1.site-title {
+        height: 2px;
+        padding: 6px 0;
+        background-color: #02ffff;
+    }
 }
 div.menu-footer-menu-container, div.menu-header-menu-container {
 	margin: 57px  0 0 320px;
