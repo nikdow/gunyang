@@ -90,8 +90,9 @@ h1.entry-title {
     font-weight: normal;
 }
 div.entry-content{
-    float: left;
-    width: 72%
+    float: right;
+    width: 72%;
+    min-width: 900px;
 }
 div.entry-content.full-width{
     width: 100%;
