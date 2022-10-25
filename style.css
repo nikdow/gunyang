@@ -26,6 +26,11 @@
         background-color: #02ffff;
     }
 }
+@media screen and (max-width: 900px){
+    hi.site-title {
+        display: none;
+    }
+}
 div.menu-footer-menu-container, div.menu-header-menu-container {
 	margin: 57px  0 0 320px;
 }
