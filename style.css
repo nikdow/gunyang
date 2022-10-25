@@ -30,10 +30,11 @@
     h1.site-title {
         display: none;
     }
+    #mega-menu-wrap-header-menu {
+        left: 0 !important;
+    }
 }
-#mega-menu-wrap-header-menu {
-    left: 0 !important;
-}
+
 div.menu-footer-menu-container, div.menu-header-menu-container {
 	margin: 57px  0 0 320px;
 }
