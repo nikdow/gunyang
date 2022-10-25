@@ -7,8 +7,14 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
-<?php include_once "sidebar.php"?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php /*
+		// Post thumbnail.
+		twentyfifteen_post_thumbnail();
+*/	?>
+
+    <?php include_once "sidebar.php"?>
 
 	<div class="entry-content <?=is_page_template( 'full-width.php' ) ? ' full-width' : ''?> ">
             <?php if ( has_post_thumbnail() ) { ?>
